@@ -22,4 +22,4 @@ pipelines:
                 - exec:
                     command: echo
                     arguments:
-                      - "hello"
+                      - "hello GOCD"
