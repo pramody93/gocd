@@ -1,0 +1,25 @@
+format_version: 10
+
+pipelines:
+  playwright-automation-image:
+    group: defaultGroup
+    label_template: ${COUNT}
+    lock_behavior: none
+
+    materials:
+      git-repo:
+        git: https://github.com/pineafl-algo-dev/playwright-automation.git
+        branch: master
+        shallow_clone: false
+        auto_update: true
+
+    stages:
+      - build-image:
+          fetch_materials: true
+          jobs:
+            deploy:
+              tasks:
+                - exec:
+                    command: echo
+                    arguments:
+                      - "hello"
