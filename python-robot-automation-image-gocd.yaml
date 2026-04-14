@@ -1,8 +1,8 @@
 format_version: 10
 
 pipelines:
-  playwright-automation-image:
-    group: python-robot-automation-image
+  python-robot-automation-image:
+    group: automation-test-pipelines
     label_template: ${COUNT}
     lock_behavior: none
 
