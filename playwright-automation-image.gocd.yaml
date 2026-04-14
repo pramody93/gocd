@@ -2,7 +2,7 @@ format_version: 10
 
 pipelines:
   playwright-automation-image:
-    group: automation-test
+    group: automation-test-pipelines
     label_template: ${COUNT}
     lock_behavior: none
 
